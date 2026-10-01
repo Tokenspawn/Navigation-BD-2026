@@ -6,9 +6,11 @@ using UnityEngine.AI;
 public class AgentBehavior : MonoBehaviour
 {
     public NavMeshAgent agent;
-    public Transform target;
-    public Transform target2;
+
+    public Transform[] targets;
     public Transform targetAux;
+    private int targetActual = 0;
+
 
     // Start is called before the first frame update
     void Start()
